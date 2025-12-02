@@ -1,33 +1,36 @@
-# README
+# Remote Feed Posts
 
-## Instalasi Plugin Featured Images for RSS Feeds
+Plugin ini memungkinkan Anda untuk menampilkan postingan dari feed RSS eksternal di situs WordPress Anda menggunakan shortcode. Fitur utamanya meliputi tampilan judul, thumbnail, tanggal, dan kutipan singkat dari setiap postingan feed.
 
-Untuk menginstal plugin "Featured Images for RSS Feeds" di WordPress Anda, ikuti langkah-langkah berikut:
+## Persyaratan Sistem
 
-1.  **Unduh Plugin:**
-    *   Cari "Featured Images for RSS Feeds" di direktori plugin WordPress atau kunjungi halaman pluginnya.
-    *   Unduh file .zip plugin tersebut.
+Plugin ini membutuhkan plugin tambahan agar fitur gambar unggulan (thumbnail) dari feed RSS dapat berfungsi dengan baik:
 
-2.  **Unggah dan Instal:**
-    *   Masuk ke dasbor admin WordPress Anda.
-    *   Pergi ke `Plugins > Tambah Baru`.
-    *   Klik tombol `Unggah Plugin` di bagian atas.
-    *   Pilih file .zip yang telah Anda unduh, lalu klik `Instal Sekarang`.
+*   **Featured Images for RSS Feeds** - Anda harus menginstal dan mengaktifkan plugin ini terlebih dahulu.
 
-3.  **Aktifkan Plugin:**
-    *   Setelah instalasi selesai, klik `Aktifkan Plugin`.
+## Instalasi
 
-Plugin sekarang sudah terinstal dan aktif di situs WordPress Anda.
+### Langkah 1: Instal Plugin Pendukung
+1.  Masuk ke dasbor admin WordPress Anda.
+2.  Pergi ke `Plugins > Tambah Baru`.
+3.  Cari "Featured Images for RSS Feeds".
+4.  Instal dan Aktifkan plugin tersebut.
 
-## Cara Menggunakan Plugin
+### Langkah 2: Instal Remote Feed Posts
+1.  Unduh file .zip plugin `remote-feed-posts`.
+2.  Di dasbor admin, pergi ke `Plugins > Tambah Baru`.
+3.  Klik tombol `Unggah Plugin` di bagian atas.
+4.  Pilih file .zip yang telah Anda unduh, lalu klik `Instal Sekarang`.
+5.  Setelah instalasi selesai, klik `Aktifkan Plugin`.
 
-Setelah plugin terinstal dan aktif, Anda dapat menggunakan shortcode berikut untuk menampilkan feed:
+## Cara Menggunakan
+
+Setelah kedua plugin terinstal dan aktif, Anda dapat menggunakan shortcode berikut di halaman atau postingan mana pun untuk menampilkan feed:
 
 ```php
-[remote_feed url="https://alamat/feed/" limit="5"]
+[remote_feed url="https://alamat-website.com/feed/" limit="5"]
 ```
 
-Parameter:
-- `url`: URL feed yang ingin Anda tampilkan.
-- `limit`: Jumlah postingan yang ingin Anda tampilkan (default: 5).
-
+### Parameter Shortcode
+- `url`: URL feed RSS yang ingin Anda tampilkan (wajib).
+- `limit`: Jumlah postingan yang ingin Anda tampilkan (opsional, default: 5).
